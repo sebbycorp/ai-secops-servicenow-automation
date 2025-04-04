@@ -1,0 +1,10 @@
+theme: jekyll-theme-cayman
+title: AI-Assisted ServiceNow Security Operations
+description: Voice-controlled security operations workflow with AI translation and automated implementation
+show_downloads: true
+google_analytics:
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
