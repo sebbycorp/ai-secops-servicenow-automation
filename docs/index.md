@@ -9,7 +9,7 @@ title: AI-Assisted ServiceNow Security Operations Workflow
 
 This project implements an AI-powered workflow that connects ServiceNow ticket management with security operations, enabling voice-controlled management of security changes.
 
-![Workflow Diagram](https://raw.githubusercontent.com/sebbycorp/ai-secops-servicenow-automation/main/docs/workflow_diagram.png)
+{% include_relative workflow_diagram.md %}
 
 ## How It Works
 
