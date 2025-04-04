@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Assisted ServiceNow Security Operations Workflow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-shield-alt"></i> AI-Assisted SecOps</h1>
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#workflow">Workflow</a></li>
+                    <li><a href="#implementation">Implementation</a></li>
+                    <li><a href="https://github.com/sebbycorp/ai-secops-servicenow-automation">
+                        <i class="fab fa-github"></i> GitHub
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Voice-Driven Security Operations</h2>
+                <p>Streamlining ServiceNow security approvals with AI and automation</p>
+                <a href="#workflow" class="btn">Explore Workflow</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview" class="section">
+        <div class="container">
+            <h2><i class="fas fa-project-diagram"></i> Project Overview</h2>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p>This project implements an AI-assisted workflow automation system for ServiceNow ticket management and security change implementation. The system integrates an AI assistant (Claude) with ServiceNow and various operational tools to streamline the security review and approval process.</p>
+                    
+                    <p>The SecOps Prompt Engineer provides final approval for changes after AI presents them in plain language, ensuring security oversight while automating implementation.</p>
+                </div>
+                <div class="overview-features">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><i class="fas fa-microphone"></i> Voice-controlled AI interface to ServiceNow</li>
+                        <li><i class="fas fa-language"></i> Plain-language translation of technical security changes</li>
+                        <li><i class="fas fa-cogs"></i> Automated security change implementation</li>
+                        <li><i class="fab fa-github"></i> GitHub and Confluence integration for documentation</li>
+                        <li><i class="fas fa-clipboard-check"></i> Complete audit trail of approvals and implementations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="workflow" class="section section-dark">
+        <div class="container">
+            <h2><i class="fas fa-exchange-alt"></i> Workflow</h2>
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Ticket Query and Status</h3>
+                        <p>User initiates voice query: "Do I have any tickets in my ServiceNow queue?"</p>
+                        <p>AI interfaces with ServiceNow API to retrieve queue status and responds with pending tickets requiring SecOps review.</p>
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Ticket Analysis</h3>
+                        <p>User requests: "Describe the first ticket and check if it's approved and scheduled"</p>
+                        <p>AI retrieves detailed ticket information including change request details, current approval status, associated CTasks status, and scheduled implementation window.</p>
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Security Review Preparation</h3>
+                        <p>AI confirms all prerequisite tasks are complete and prepares a plain-language summary of pending firewall/load balancer changes.</p>
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Change Review and Approval</h3>
+                        <p>AI presents the proposed changes in plain English: "This change will allow web traffic from the new marketing application server to access the customer database on port 3306"</p>
+                        <p>SecOps engineer reviews and verbally approves: "I approve this change"</p>
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Automated Implementation</h3>
+                        <p>AI triggers MCP service to execute approved changes, perform validation, and update documentation.</p>
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Notification and Verification</h3>
+                        <p>AI sends notifications to stakeholders, schedules verification checks, and confirms successful deployment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workflow-diagram">
+                <h3>Workflow Diagram</h3>
+                <img src="flowchart.png" alt="AI-Assisted SecOps Workflow Diagram">
+                <p><a href="https://github.com/sebbycorp/ai-secops-servicenow-automation/blob/main/flowchart.mermaid" class="btn btn-small">View Mermaid Diagram</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="implementation" class="section">
+        <div class="container">
+            <h2><i class="fas fa-code"></i> Implementation</h2>
+            
+            <div class="implementation-content">
+                <div class="implementation-item">
+                    <h3><i class="fas fa-cogs"></i> System Architecture</h3>
+                    <p>The AI-Assisted ServiceNow Security Operations Workflow consists of several integrated components:</p>
+                    <ul>
+                        <li><strong>Voice Interface Layer:</strong> Speech-to-text processing, natural language understanding</li>
+                        <li><strong>AI Assistant (Claude):</strong> Processes user requests, translates technical details to plain language</li>
+                        <li><strong>ServiceNow Integration:</strong> REST API connection to ServiceNow</li>
+                        <li><strong>MCP Service:</strong> Orchestration engine for change implementation</li>
+                        <li><strong>Documentation Automation:</strong> GitHub API and Confluence API integration</li>
+                    </ul>
+                </div>
+                
+                <div class="implementation-item">
+                    <h3><i class="fas fa-shield-alt"></i> Security Considerations</h3>
+                    <ul>
+                        <li><strong>Least Privilege Access:</strong> AI and MCP services have minimum required permissions</li>
+                        <li><strong>Approval Verification:</strong> Multi-factor authentication for critical changes</li>
+                        <li><strong>Audit Logging:</strong> All queries and changes logged to a secure, immutable log</li>
+                        <li><strong>Sensitive Data Handling:</strong> Data masking for sensitive information</li>
+                    </ul>
+                </div>
+                
+                <div class="implementation-item">
+                    <h3><i class="fas fa-chart-line"></i> Benefits</h3>
+                    <ul>
+                        <li>Reduces manual documentation effort</li>
+                        <li>Streamlines approval process</li>
+                        <li>Ensures consistent implementation</li>
+                        <li>Provides clear audit trail</li>
+                        <li>Improves communication between technical and security teams</li>
+                        <li>Reduces implementation time while maintaining security oversight</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="cta">
+                <h3>Ready to implement?</h3>
+                <p>Check out the complete implementation guide and code samples on GitHub.</p>
+                <a href="https://github.com/sebbycorp/ai-secops-servicenow-automation" class="btn"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI-Assisted SecOps Project. Created by <a href="https://github.com/sebbycorp">sebbycorp</a>.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
